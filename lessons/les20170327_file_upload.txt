@@ -1,0 +1,22 @@
+1)  Загрузка файла в форме:
+
+<form enctype="multipart/form-data">
+
+<input type='hidden' name="MAX_FILE_SIZE" value="30000"> // Опционально - Размер для каждого
+<input type="file">
+
+</form>
+
+
+2) На сервере - Настройка окружения
+
+3) move_uploaded_file
+    is_uploaded_file
+    $_FILES - информация о файлах для загрузки
+
+    $_FILE['userfile']['name'] - имя файла на компьютере
+    $_FILE['userfile']['type'] - тип данных MIME
+
+UPLOAD_ERR - коды ошибок
+
+4) Генерация имен файлов

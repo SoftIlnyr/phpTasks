@@ -1,0 +1,34 @@
+fopen(), fclose(), flock() ...
+
+Не требует дополнительной инициализации
+file_get_contents
+file_put_contents
+
+file_exists
+
+Кодировка информации:
+- JSON (как записываются объекты в JavaScript)
+    json_encode
+    json_decode
+- XML
+- INI
+[Section1]
+    (название = значение)
+[Section2]
+    (название = значение)
+
+- CSV (comma-separated values)
+
+- YAML (Yet Ain't markup language) - не язык разметки
+    - Бесконечная вложенность
+
+- Serialize() - string
+- unserialize() - mixed
+
+REGEX
+
+    ereg_
+    preg _match("~", $_POST[...]);
+
+    /[abc]*/
+
