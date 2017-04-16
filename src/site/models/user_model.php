@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: softilnyr
- * Date: 15.04.17
- * Time: 15:31
- */
 
-
-class User
+class User_Model extends Model
 {
     public $firstname;
     public $lastname;
@@ -23,6 +16,14 @@ class User
     {
 
         // TODO: Implement __set() method.
+    }
+
+    static function get_data()
+    {
+        $users_dir = SITE_PATH . "/data";
+        $users_file = $users_dir . "/users.json";
+        $users_db = json_decode(file_get_contents($users_file), true);
+        return $users_db;
     }
 
 

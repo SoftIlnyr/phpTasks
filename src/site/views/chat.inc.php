@@ -18,12 +18,13 @@
     <title>Chat</title>
 </head>
 <body>
+
 <form action="/chat" method="post">
     <p><label>Your email: <input type="email" name="email"
-                                 value="<?= isset($data["email"]) ? $data["email"] : "" ?>"></label> <?= isset($errors["email"]) ? $errors["email"] : "" ?>
+                                 value="<?= isset($data["info"]["email"]) ? $data["info"]["email"] : "" ?>"></label> <?= isset($data["errors"]["email"]) ? $data["errors"]["email"] : "" ?>
     </p>
     <p><label>Type your message here: <textarea
-                    name="text"><?= isset($data["text"]) ? $data["text"] : "" ?></textarea></label> <?= isset($errors["text"]) ? $errors["text"] : "" ?>
+                    name="text"><?= isset($data["info"]["text"]) ? $data["info"]["text"] : "" ?></textarea></label> <?= isset($data["errors"]["text"]) ? $data["errors"]["text"] : "" ?>
     </p>
     <p><input type="submit" name="message" value="Send!"></p>
 </form>

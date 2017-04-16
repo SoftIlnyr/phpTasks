@@ -2,9 +2,9 @@
 #RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteCond %{REQUEST_FILENAME}\.php -f
 #RewriteRule ^(.*)$ $1.php
-#RewriteRule ^register$ www/soft/register.controller.php
-#RewriteRule ^chat$ www/soft/chat.controller.php
-#RewriteRule ^profile$ www/soft/profile.controller.php
+#RewriteRule ^register$ www/soft/register_controller.php
+#RewriteRule ^chat$ www/soft/chat_controller.php
+#RewriteRule ^profile$ www/soft/profile_controller.php
 
 #Directory options for Apache httpd
 
